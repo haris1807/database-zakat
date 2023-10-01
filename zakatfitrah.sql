@@ -37,19 +37,6 @@ CREATE TABLE `bayarzakat` (
   `bayar_uang` varchar(100) COLLATE utf8mb4_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `bayarzakat`
---
-
-INSERT INTO `bayarzakat` (`id_zakat`, `nama_KK`, `jumlah_tanggungan`, `jenis_bayar`, `jumlah_tanggunganyangdibayar`, `bayar_beras`, `bayar_uang`) VALUES
-(1, 'Aidan', 5, 'beras', 5, '12.5 Kg', 'Rp. 0'),
-(2, 'Eliseo', 6, 'beras', 6, '15 Kg', 'Rp. 0'),
-(3, 'Ambrose', 2, 'beras', 2, '5 Kg', 'Rp. 0'),
-(4, 'Yahya', 7, 'beras', 6, '15 Kg', 'Rp. 0'),
-(5, 'Emery', 3, 'uang', 2, '0 Kg', 'Rp. 30000'),
-(6, 'Flynn', 2, 'beras', 2, '5 Kg', 'Rp. 0');
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `kategori_mustahik`
@@ -61,26 +48,6 @@ CREATE TABLE `kategori_mustahik` (
   `jumlah_hak` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `kategori_mustahik`
---
-
-INSERT INTO `kategori_mustahik` (`id_kategori`, `nama_kategori`, `jumlah_hak`) VALUES
-(1, 'Amil', 10),
-(2, 'Fakir', 20),
-(3, 'miskin', 8),
-(4, 'Fisabilillah(Ustad)', 3),
-(5, 'Fisabilillah(Santri)', 3),
-(6, 'Mampu', 3),
-(7, 'Lainnya', 3),
-(8, 'Muallaf', 5),
-(9, 'ibnu sabil', 3);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `mustahik_lainnya`
---
 
 CREATE TABLE `mustahik_lainnya` (
   `id_mustahiklainnya` int NOT NULL,
@@ -89,23 +56,7 @@ CREATE TABLE `mustahik_lainnya` (
   `hak` varchar(100) COLLATE utf8mb4_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `mustahik_lainnya`
---
 
-INSERT INTO `mustahik_lainnya` (`id_mustahiklainnya`, `nama`, `kategori`, `hak`) VALUES
-(1, 'Jajang', 'Ibnu Sabil', '5 Kg'),
-(2, 'Usep', 'Amilin', '10 Kg'),
-(3, 'dazong', 'Mualaf', '5 Kg'),
-(4, 'dorothy', 'Fisabilillah(Ustad)', '3 Kg'),
-(5, 'dart', 'Fisabilillah(Santri)', '3 Kg'),
-(6, 'AcidFace', 'Ibnu Sabil', '5 Kg'),
-(7, 'Atomic Blastoid', 'Ibnu Sabil', '5 Kg'),
-(8, 'Betty Cricket', 'Amilin', '10 Kg');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `mustahik_warga`
 --
 
@@ -116,18 +67,6 @@ CREATE TABLE `mustahik_warga` (
   `hak` varchar(100) COLLATE utf8mb4_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `mustahik_warga`
---
-
-INSERT INTO `mustahik_warga` (`id_mustahikwarga`, `nama`, `kategori`, `hak`) VALUES
-(1, 'Aidan', 'Mampu', '3 Kg'),
-(2, 'Ambrose', 'Fakir', '20 Kg'),
-(3, 'Eliseo', 'miskin', '8 Kg'),
-(4, 'Emery', 'Mampu', '3 Kg'),
-(5, 'Ethan', 'miskin', '8 Kg');
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `muzakki`
@@ -141,27 +80,7 @@ CREATE TABLE `muzakki` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `muzakki`
---
 
-INSERT INTO `muzakki` (`id_muzakki`, `nama_muzakki`, `jumlah_tanggungan`, `keterangan`) VALUES
-(1, 'Aidan', 5, 'Warga tetap'),
-(2, 'Ambrose', 2, 'Warga tetap'),
-(3, 'Eliseo', 6, 'Warga tetap'),
-(4, 'Ethan', 1, 'Warga sementara'),
-(5, 'Rodolfo', 4, 'Warga tetap'),
-(6, 'Todd', 3, 'Warga tetap'),
-(7, 'Yahya', 6, 'Warga tetap'),
-(8, 'Emery', 3, 'Warga tetap'),
-(9, 'Flynn', 2, 'Warga sementara'),
-(10, 'Jade', 4, 'Warga tetap'),
-(12, 'Madhava', 4, 'Warga tetap'),
-(14, 'Keseleo', 4, 'Warga tetap'),
-(15, 'Koro', 3, 'Warga tetap');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `user`
 --
 
