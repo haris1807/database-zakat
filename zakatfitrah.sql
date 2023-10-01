@@ -92,15 +92,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `user`
---
 
-INSERT INTO `user` (`id_user`, `username`, `email`, `password`) VALUES
-(1, 'Haris', 'Haris@gmail.com', 'Haris123'),
-(10, 'awdhawdh', 'hariss@gmail.com', 'aasd');
-
---
--- Indexes for dumped tables
 --
 
 --
